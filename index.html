@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Not A Race</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">It's Not A Race</a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="support.html">Support Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://its-not-a-race.raisely.com/" target="_blank" class="donate-btn">Donate</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="#" class="sidebar-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="sidebar-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="sidebar-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="sidebar-icon"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>It's Not A Race</h1>
+            <p>Support our collective of content creators taking a stand for our climate and future.</p>
+        </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="mission" id="about">
+        <div class="mission-content">
+            <p>It's Not A Race is a collective of content creators who are taking a stand for our climate and future. Politics is heating up, and so are our hot takes.</p>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <section class="nav-tabs">
+        <a href="about.html" class="tab tab-about">About Us</a>
+        <a href="#channels" class="tab tab-see">See Us</a>
+        <a href="support.html" class="tab tab-support">Support Us</a>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="container">
+            <h2 class="social-heading">Where you will find us</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100081319630176" class="social-icon facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/itsnotarace2025/" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/ItsNotARace2025" class="social-icon twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.tiktok.com/@itsnotarace2025" class="social-icon tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/@INAR2025" class="social-icon youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Channel Showcase -->
+    <section class="channel-section" id="channels">
+        <div class="container">
+            <h2 class="channel-heading">Where you'll see us</h2>
+            <div class="channel-showcase">
+                <div class="channel-card">
+                    <img src="assets/images/card-itsnotarace.jpg" alt="It's Not A Race" class="channel-img">
+                    <div class="channel-info">
+                        <h3 class="channel-name">It's Not A Race</h3>
+                    </div>
+                </div>
+                <div class="channel-card">
+                    <img src="assets/images/card-bigclimate.jpg" alt="Big Climate" class="channel-img">
+                    <div class="channel-info">
+                        <h3 class="channel-name">Big Climate</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section class="donate-section" id="donate">
+        <div class="donate-content">
+            <h2 class="donate-heading">Donate</h2>
+            <p class="donate-text">Chip in today to support our content</p>
+            <a href="https://its-not-a-race.raisely.com/" target="_blank" class="donate-now-btn">Donate Now</a>
+        </div>
+        <div class="donate-image"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>It's Not A Race</h3>
+                <p>This election is heating up.<br>So are our hot takes.</p>
+                <p>Email: info@itsnotarace.com.au</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#support">Support Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 It's Not A Race | Authorised by Dan Ilic, It's Not A Race, Manly</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Header scroll effect
+        const header = document.getElementById('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

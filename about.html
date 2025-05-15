@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - It's Not A Race</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">It's Not A Race</a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="support.html">Support Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="https://its-not-a-race.raisely.com/" target="_blank" class="donate-btn">Donate</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/profile.php?id=100081319630176" class="sidebar-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/ItsNotARace2025" class="sidebar-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/itsnotarace2025/" class="sidebar-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@itsnotarace2025" class="sidebar-icon"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/@INAR2025" class="sidebar-icon"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Us</h1>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <p>It's Not A Race is a collective of creative writers and content producers who want to have a say in our country's future. We make engaging content about the important issues of the day, to move people to care about the world around them with a story, meme or video that is more engaging than a political press release. We have a simple rule about who we will go after: anyone funded by the fossil fuel lobby.</p>
+                <p>The It's Not A Race team, concerned that the election campaign is being filled with misinformation and harmful tropes, has come together to build a collective of content creators, producers, digital marketers and campaigners. You'll see It's Not A Race Content under one of our two brands: It's Not A Race and Big Climate.</p> 
+                <p>We are inspired by late Malaysian/Singaporean artist Gerard D’Alton Henderson. </p>
+                <p><i>"Art is a high concentration of the spirit. In this madly rushing world so dominated by the materialistic, commercial civilization we live in - what else can one do but be an artist." - Gerard Henderson.</i></p>
+                <img src="assets/images/henderson.jpg" alt="Malaysian/Singaporean artist Gerard D’Alton Henderson">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>It's Not A Race</h3>
+                <p>This election is heating up.<br>So are our hot takes.</p>
+                <p>Email: info@itsnotarace.com.au</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="support.html">Support Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 It's Not A Race | Authorised by Dan Ilic, It's Not A Race, Manly</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Header scroll effect
+        const header = document.getElementById('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
